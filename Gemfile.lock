@@ -1,0 +1,39 @@
+PATH
+  remote: .
+  specs:
+    justified (0.0.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    coderay (1.0.9)
+    ffi (1.8.1-java)
+    github-markup (0.7.5)
+    method_source (0.8.1)
+    minitest (5.0.3)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry (0.9.12.2-java)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+      spoon (~> 0.0)
+    redcarpet (2.3.0)
+    slop (3.4.5)
+    spoon (0.0.4)
+      ffi
+    yard (0.8.6.1)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  github-markup
+  justified!
+  minitest
+  pry
+  redcarpet
+  yard

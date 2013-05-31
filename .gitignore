@@ -1,0 +1,9 @@
+.bin
+.bundle
+.ruby-version
+.idea
+.yardoc
+playground
+presentation
+yardoc
+*.gem

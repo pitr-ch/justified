@@ -1,0 +1,15 @@
+--protected
+--private
+--verbose
+--main=README.md
+--output-dir=./yardoc/
+--markup-provider=redcarpet
+--markup=markdown
+--title=Justified
+--template default
+--template-path ./../../public/yard-template
+
+./lib/**/*.rb
+-
+MIT-LICENSE
+README.md
