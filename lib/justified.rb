@@ -2,6 +2,10 @@ module Justified
   SKIP_STR   = '    ... skipped %s lines'
   CAUSED_STR = 'caused by:'
 
+  def self.version
+    @version ||= Gem::Version.new File.read(File.join(File.dirname(__FILE__), '..', 'VERSION'))
+  end
+
   module Error
     def initialize(message = nil, cause = $!)
       super(message)

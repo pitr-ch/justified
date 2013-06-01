@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name        = 'justified'
-  s.version     = '0.0.1'
+  s.version     = File.read(File.join(File.dirname(__FILE__), 'VERSION'))
   s.date        = '2013-05-30'
   s.summary     = 'Exception causes'
   s.description = <<-TEXT

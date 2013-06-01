@@ -67,10 +67,10 @@ Of course causes can be concatenated.
 
 ## Usage
 
-*   `require 'justified'` to include `Justified::Error` to any exception you need manualy
+*   `require 'justified'` to include `Justified::Error` to any exception you need manually
 *   `require 'justified/standard_error'` to have causes in all exceptions which are kind of `StandardError`
 
-### Behaviour
+### Behavior
 
 When an exception is risen inside rescue block a cause is automatically recorded.
 
