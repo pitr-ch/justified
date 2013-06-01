@@ -1,7 +1,7 @@
 --protected
 --private
 --verbose
---main=README.md
+--main=README_FULL.md
 --output-dir=./yardoc/
 --markup-provider=redcarpet
 --markup=markdown
