@@ -37,7 +37,7 @@ describe 'justified' do
     it { error.cause.message.must_equal 'bad' }
     it { error.backtrace.must_include 'caused by: (AnError) bad' }
     it do
-      assert error.backtrace.any? { |l| l =~ %r"/justified/spec/justified\.rb:\d+:in `bad_code'" }
+      assert error.backtrace.any? { |l| l =~ %r"spec/justified\.rb:\d+:in `bad_code'" }
     end
   end
 
@@ -51,7 +51,7 @@ describe 'justified' do
     it { error2.backtrace.wont_include 'caused by: (AnError) bad' }
     it do
       refute error2.backtrace.
-                 any? { |l| l =~ %r"/justified/spec/justified\.rb:15:in `bad_code'" }
+                 any? { |l| l =~ %r"spec/justified\.rb:15:in `bad_code'" }
     end
   end
 
@@ -66,7 +66,7 @@ describe 'justified' do
     it { error2.backtrace.must_include 'caused by: (RuntimeError) other' }
     it do
       assert error2.backtrace.any? do |l|
-        l =~ %r"/justified/spec/justified\.rb:\d+:in `block \(\d levels\)'"
+        l =~ %r"spec/justified\.rb:\d+:in `block \(\d levels\)'"
       end
     end
   end
@@ -84,7 +84,7 @@ describe 'justified' do
     it { error.backtrace.must_include 'caused by: (RuntimeError) other' }
     it do
       assert error.backtrace.any? do |l|
-        l =~ %r"/justified/spec/justified\.rb:\d+:in `block \(\d levels\)'"
+        l =~ %r"spec/justified\.rb:\d+:in `block \(\d levels\)'"
       end
     end
   end

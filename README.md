@@ -1,4 +1,6 @@
-## Justified
+# Justified
+
+[![Build Status](https://travis-ci.org/pitr-ch/justified.png)](https://travis-ci.org/pitr-ch/justified)
 
 A mini-gem to add missing **causes** to exception `backtrace`-s like Java has.
 
