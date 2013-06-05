@@ -65,12 +65,37 @@
 
 <p><a href="https://travis-ci.org/pitr-ch/justified"><img src="https://travis-ci.org/pitr-ch/justified.png" alt="Build Status"></a></p>
 
-<p>A mini-gem to add missing <strong>causes</strong> to exception <code>backtrace</code>-s like Java has.</p>
+<p>A mini-gem to add missing <strong>causes</strong> to exception <code>backtrace</code>-s like Java has. This gem will add following
+at the bottom of a <code>backtrace</code>:</p>
 
 <pre class="code ruby"><code class="ruby">    from caused by: (AnError) an ugly bug
     from justified.rb:83:in `bad_code'
     from     ... skipped 4 lines
 </code></pre>
+
+<p>Exception cause can be also accessed with <code>#cause</code> method which returns <code>nil</code> or an <code>Exception</code>.</p>
+
+<h2>Example</h2>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>justified/standard_error</span><span class='tstring_end'>'</span></span>
+
+<span class='kw'>begin</span> 
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>a cause</span><span class='tstring_end'>'</span></span>
+<span class='kw'>rescue</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>an exception</span><span class='tstring_end'>'</span></span>
+<span class='kw'>end</span>
+</code></pre>
+
+<p>will print </p>
+
+<pre class="code ruby"><code class="ruby">file.rb:6:in `rescue in &lt;main&gt;': an exception (RuntimeError)
+    from file.rb:3:in `&lt;main&gt;'
+    from caused by: (RuntimeError) a cause
+    from file.rb:4:in `&lt;main&gt;'
+    from     ... skipped 0 lines
+</code></pre>
+
+<h2>Links</h2>
 
 <ul>
 <li>  Documentation: <a href="http://blog.pitr.ch/justified">http://blog.pitr.ch/justified</a></li>
@@ -80,7 +105,7 @@
 </div></div>
 
     <div id="footer">
-  Generated on Sat Jun  1 16:49:25 2013 by <a href='http://blog.pitr.ch'>pitr.ch</a> with
+  Generated on Wed Jun  5 10:05:49 2013 by <a href='http://blog.pitr.ch'>pitr.ch</a> with
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>
