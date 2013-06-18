@@ -13,17 +13,18 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(MIT-LICENSE)
   s.files            = Dir['lib/**/*.rb']
   s.require_paths    = %w(lib)
-  s.test_files       = Dir['spec/justified.rb']
+  s.test_files       = Dir['test/**/*.rb']
 
   {}.each do |gem, version|
     s.add_runtime_dependency(gem, [version || '>= 0'])
   end
 
-  { 'minitest'      => nil,
-    'pry'           => nil,
-    'yard'          => nil,
-    'redcarpet'     => nil,
-    'github-markup' => nil
+  { 'minitest'           => nil,
+    'minitest-reporters' => nil,
+    'pry'                => nil,
+    'yard'               => nil,
+    'redcarpet'          => nil,
+    'github-markup'      => nil
   }.each do |gem, version|
     s.add_development_dependency(gem, [version || '>= 0'])
   end
