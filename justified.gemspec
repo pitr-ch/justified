@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors          = ['Petr Chalupa']
   s.email            = 'git@pitr.ch'
   s.homepage         = 'https://github.com/pitr-ch/justified'
-  s.extra_rdoc_files = %w(MIT-LICENSE)
+  s.extra_rdoc_files = %w(MIT-LICENSE VERSION README.md README_FULL.md)
   s.files            = Dir['lib/**/*.rb']
   s.require_paths    = %w(lib)
   s.test_files       = Dir['test/**/*.rb']
