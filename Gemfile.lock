@@ -1,41 +1,41 @@
 PATH
   remote: .
   specs:
-    justified (0.0.3)
+    justified (0.0.5)
 
 GEM
   remote: http://rubygems.org/
   specs:
     ansi (1.4.3)
     builder (3.2.2)
-    coderay (1.0.9)
-    ffi (1.9.0-java)
-    github-markup (0.7.5)
+    coderay (1.1.0)
+    ffi (1.9.3-java)
+    github-markup (1.0.0)
     hashie (2.0.5)
-    method_source (0.8.1)
-    minitest (4.7.4)
-    minitest-reporters (0.14.20)
+    method_source (0.8.2)
+    minitest (5.2.2)
+    minitest-reporters (1.0.0)
       ansi
       builder
-      minitest (>= 2.12, < 5.0)
+      minitest (>= 5.0)
       powerbar
     powerbar (1.0.11)
       ansi (~> 1.4.0)
       hashie (>= 1.1.0)
-    pry (0.9.12.2)
-      coderay (~> 1.0.5)
+    pry (0.9.12.5)
+      coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
-    pry (0.9.12.2-java)
-      coderay (~> 1.0.5)
+    pry (0.9.12.5-java)
+      coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
       spoon (~> 0.0)
-    redcarpet (2.3.0)
-    slop (3.4.5)
+    redcarpet (3.0.0)
+    slop (3.4.7)
     spoon (0.0.4)
       ffi
-    yard (0.8.6.1)
+    yard (0.8.7.3)
 
 PLATFORMS
   java
