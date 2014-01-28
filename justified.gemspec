@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name        = 'justified'
   s.version     = File.read(File.join(File.dirname(__FILE__), 'VERSION'))
-  s.date        = '2013-05-30'
+  s.date             = Time.now.strftime('%Y-%m-%d')
   s.summary     = 'Exception causes'
   s.description = <<-TEXT
     Provides causes for exceptions.
